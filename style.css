@@ -1,0 +1,48 @@
+.box{
+    background-color:white;
+    padding:10px;
+    margin:auto;
+    width:80%;
+    height:200px;
+    text-align:left;
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box label{
+    font-size:large;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+.box label::after{
+    content: "*";
+    color:red;
+}
+body{
+    background-color: rgb(73, 71, 71) ;
+}
+button{
+    text-decoration:none;
+    background-color:rgb(4, 18, 94);
+    color:#fff;
+}
+button:hover{
+    background-color:#fff;
+    color:rgb(4, 18, 94);
+}
+.header{
+    text-align:center;
+    color:white;
+    height:100px;
+    margin:auto;
+    background-color: rgb(39, 37, 37);
+    border:solid 1px white;
+    border-radius:10px;
+    box-shadow:15px;
+}
+@media only screen and (max-width: 600px) {
+   .box label {
+       display: none;
+   }
+  }
